@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Iriss serves as a simple and secure alternative to Google search as well as other search engines. Iris utulizes google search APIs (for now) to provide the top and best results to your search query all while providing you with a simple but elegant UI as well as ensuring that your data is safe." />
+    <meta name="keywords" content="iriss,search,google alternative,secure"/> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DynaPuff"/>
 
@@ -45,13 +46,21 @@
         {
           wrap.style.backgroundColor = "black";
           body.style.backgroundColor = "black";
+          wrap.style.boxShadow = "0px 0px 0px 5px ghostwhite;";
+          wrap.style.border = "none";
           searchBar.style.backgroundColor = "black";
           searchBar.style.color = "white";
+          searchBar.style.boxShadow = "none";
           sButton.style.backgroundColor = "black";
+          sButton.style.boxShadow = "none";
           rBtn.style.backgroundColor = "black";
+          rBtn.style.boxShadow = "none";
           iBtn.style.backgroundColor = "black";
+          iBtn.style.boxShadow = "none";
           vBtn.style.backgroundColor = "black";
+          vBtn.style.boxShadow = "none";
           nBtn.style.backgroundColor = "black";
+          nBtn.style.boxShadow = "none";
 
           boxes.forEach(box => {
           box.style.color = 'white';
@@ -76,11 +85,10 @@
         }
         else if(document.querySelector(".checker").checked == false)
         {
-          wrap.style.backgroundColor = "";
-          body.style.backgroundColor = "";
-          searchBar.style.backgroundColor = "";
-          searchBar.style.color = "";
-          sButton.style.backgroundColor = "";
+          wrap.style = "";
+          body.style = "";
+          searchBar.style = "";
+          sButton.style = "";
           rBtn.style = "";
           rBtn.style.color = "";
           iBtn.style = "";
@@ -103,6 +111,19 @@
           title.style = "";
 
         }
+      }
+
+      function checkSearch(){
+
+        checkIn = document.getElementById("userSearch").value;
+        if(checkIn.value.length == 0)
+        {
+          console.log("Unable to perform search. No search query detected in search bar.")
+        }
+        else{
+          processSearch();
+        }
+
       }
 
       function processSearch() {
@@ -297,7 +318,7 @@
 
       function enterSearch(ele) {
         if (event.key === "Enter") {
-          processSearch();
+          checkSearch();
         }
       }
     </script>
@@ -315,7 +336,7 @@
         <h1 id="hTitle">IRISS</h1>
       </header>
       <nav>
-        <input type="text" id="userSearch" spellcheck="false" onkeydown="enterSearch(this);"/><button id="searchBtn" class="buttonsC" onclick="processSearch();">Search <select title="Search Country ID" id="countryID">
+        <input type="text" id="userSearch" spellcheck="false" onkeydown="enterSearch(this);" disabled value="Iriss is under maintenance. Please try again later."/><button id="searchBtn" class="buttonsC" onclick="checkSearch();" disabled>Search <select title="Search Country ID" id="countryID">
           <option value="US">US</option>
           <option value="CA" selected>CA</option>
           <option value="IE">IE</option>
