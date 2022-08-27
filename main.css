@@ -281,3 +281,97 @@ footer img:hover{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  section{
+    word-wrap: break-word;
+  }
+  @media screen and (max-width:720px){
+
+    #wrap{
+        width: 90%;
+    }
+
+    #countryID{
+      display: none;
+    }
+
+    .buttonsC{
+      width: 15%;
+    }
+
+    #searchBtn{
+      padding: 1%;
+    }
+
+    #userSearch{
+      width: 60%;
+    }
+
+    .switch{
+      float: right;
+    }
+}
+
+@media screen and (max-width:600px){
+
+  #wrap{
+    width: 100%;
+}
+
+#countryID{
+  display: none;
+}
+
+.buttonsC{
+  width: 18%;
+}
+
+#searchBtn{
+  padding: 1%;
+}
+
+#userSearch{
+  width: 70%;
+}
+
+.switch{
+  float: right;
+}
+}
+
+@media screen and (max-width:420px){
+
+.buttonsC{
+  width: 20%;
+}
+
+#searchBtn{
+  padding: 1%;
+}
+
+#userSearch{
+  width: 70%;
+}
+}
+
+@media screen and (max-width: 335px){
+  #userSearch{
+    width: 70%;
+  }
+  .buttonsC{
+    margin-top: 3%;
+    width: 20%;
+    font-size: 40%;
+  }
+  #searchBtn{
+    margin-left: 5%;
+  }
+
+  section{
+    font-size: 60%;
+  }
+
+  #info{
+    font-size: 40%;
+  }
+}
