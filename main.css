@@ -326,13 +326,15 @@ footer img:hover{
 
 @media screen and (max-width:600px){
 
+
   #wrap{
     width: 100%;
-    height: 600px;
-    border-radius: 0px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    transition: 1s;
+    margin-top: 20%;
+    transition: all 1s;
+    
+}
+body{
+  background-color: rgb(199, 233, 255);
 }
 
 #countryID{
