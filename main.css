@@ -306,6 +306,9 @@ footer img:hover{
       height: 34px;
       width: 15%;
     }
+    .buttonsC{
+      margin-left: 1%;
+    }
   }
   @media screen and (max-width: 1000px){
     #countryID{
@@ -389,6 +392,7 @@ body{
 
 .buttonsC{
   width: 20%;
+  margin-left: 1%;
 }
 
 #searchBtn{
@@ -397,7 +401,9 @@ body{
 
 #userSearch{
   width: 70%;
+  height: 20px;
   font-size: 8px;
+  margin-bottom: 0%;
 }
 }
 
@@ -405,14 +411,17 @@ body{
   #userSearch{
     width: 70%;
     font-size: 6px;
+    height: 16px;
+    margin-bottom: 0%;
   }
   .buttonsC{
-    margin-top: 3%;
+    margin-top: 2%;
     width: 20%;
+    margin-left: 1%;
     font-size: 40%;
   }
   #searchBtn{
-    margin-left: 5%;
+    margin-left: 2%;
   }
 
   section{
@@ -421,5 +430,10 @@ body{
 
   #info{
     font-size: 40%;
+  }
+  footer h4{
+
+    display: inline-block;
+    font-size: 6px;
   }
 }
