@@ -307,7 +307,7 @@ footer img:hover{
       width: 15%;
     }
     .buttonsC{
-      margin-left: 1%;
+      margin-left: 2%;
     }
   }
   @media screen and (max-width: 1000px){
@@ -319,6 +319,9 @@ footer img:hover{
     #searchBtn{
       width: 20%;
       height: 30px;
+    }
+    .buttonsC{
+      margin-left: 2%;
     }
   }
 
@@ -371,6 +374,7 @@ body{
 
 .buttonsC{
   width: 18%;
+  margin-left: 2%;
 }
 
 #searchBtn{
@@ -380,7 +384,7 @@ body{
 #userSearch{
   width: 70%;
   font-size: 10px;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 .switch{
@@ -392,7 +396,7 @@ body{
 
 .buttonsC{
   width: 20%;
-  margin-left: 1%;
+  margin-left: 3%;
 }
 
 #searchBtn{
@@ -403,7 +407,7 @@ body{
   width: 70%;
   height: 20px;
   font-size: 8px;
-  margin-bottom: 0%;
+  margin-bottom: 3%;
 }
 }
 
@@ -412,16 +416,16 @@ body{
     width: 70%;
     font-size: 6px;
     height: 16px;
-    margin-bottom: 0%;
+    margin-bottom: 3%;
   }
   .buttonsC{
     margin-top: 2%;
     width: 20%;
-    margin-left: 1%;
+    margin-left: 3%;
     font-size: 40%;
   }
   #searchBtn{
-    margin-left: 2%;
+    margin-left: 5%;
   }
 
   section{
