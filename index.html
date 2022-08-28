@@ -97,7 +97,7 @@
         }
       }
       function checkSearch() {
-        checkIn = document.getElementById("userSearch").value;
+        checkIn = document.getElementById("userSearch").value || '';
         if (checkIn.value.length == 0) {
           console.log(
             "Unable to perform search. No search query detected in search bar."
