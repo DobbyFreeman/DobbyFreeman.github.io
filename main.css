@@ -316,6 +316,7 @@ footer img:hover{
 
     #userSearch{
       width: 60%;
+      font-size: 10px;
     }
 
     .switch{
@@ -348,6 +349,7 @@ footer img:hover{
 
 #userSearch{
   width: 70%;
+  font-size: 10px;
 }
 
 .switch{
@@ -367,12 +369,14 @@ footer img:hover{
 
 #userSearch{
   width: 70%;
+  font-size: 8px;
 }
 }
 
 @media screen and (max-width: 335px){
   #userSearch{
     width: 70%;
+    font-size: 6px;
   }
   .buttonsC{
     margin-top: 3%;
