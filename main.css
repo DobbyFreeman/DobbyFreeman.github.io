@@ -331,7 +331,7 @@ footer img:hover{
     border-radius: 0px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    transition: height 1s;
+    transition: 1s;
 }
 
 #countryID{
