@@ -39,7 +39,7 @@
         if (document.querySelector(".checker").checked == true) {
           wrap.style.backgroundColor = "black";
           body.style.backgroundColor = "black";
-          wrap.style.boxShadow = "0px 0px 0px 5px ghostwhite;";
+          wrap.style.boxShadow = "1px 1px 15px 15px rgb(255, 215, 0, 0.5)";
           wrap.style.border = "none";
           searchBar.style.backgroundColor = "black";
           searchBar.style.color = "white";
@@ -367,16 +367,49 @@
           checkSearch();
         }
       }
+
+      function popup() {
+        var popup = document.getElementById("popDiv");
+        popup.style.display = "block";
+      }
+
+      function unPop() {
+        var popup = document.getElementById("popDiv");
+        popup.style.display = "none";
+      }
     </script>
   </head>
   <body id="bodyID">
     <div id="wrap">
+      <div id="popDiv">
+        <button id="unpopBtn" onclick="unPop();"></button>
+        <h3 id="popHead">About Iriss</h3>
+        <p1>Iriss is a web search website that was built by me for me fun. Please use at your own risk.</p1>
+      </div>
+      <div id="controls">
+      <select title="Search Country ID" id="countryID">
+        <option value="US">US</option>
+        <option value="CA" selected>CA</option>
+        <option value="IE">IE</option>
+        <option value="GB">GB</option>
+        <option value="FR">FR</option>
+        <option value="DE">DE</option>
+        <option value="SE">SE</option>
+        <option value="IN">IN</option>
+        <option value="JP">JP</option>
+        <option value="KR">KR</option>
+        <option value="SG">SG</option>
+        <option value="AU">AU</option>
+        <option value="BR">BR</option>
+      </select>
       <div id="darkLightD">
         <label class="switch">
           <input type="checkbox" class="checker" onclick="toggleLightDark();" />
           <span class="slider round"></span>
         </label>
       </div>
+      <button id="popupBtn" onclick="popup();"></button>
+    </div>
       <header><h1 id="hTitle">IRISS</h1></header>
       <nav>
         <input
@@ -391,21 +424,7 @@
           onclick="checkSearch();"
         >
           Search
-          <select title="Search Country ID" id="countryID">
-            <option value="US">US</option>
-            <option value="CA" selected>CA</option>
-            <option value="IE">IE</option>
-            <option value="GB">GB</option>
-            <option value="FR">FR</option>
-            <option value="DE">DE</option>
-            <option value="SE">SE</option>
-            <option value="IN">IN</option>
-            <option value="JP">JP</option>
-            <option value="KR">KR</option>
-            <option value="SG">SG</option>
-            <option value="AU">AU</option>
-            <option value="BR">BR</option>
-          </select></button
+          </button
         ><br /><button
           id="resultsBtn"
           class="buttonsC"
@@ -436,9 +455,9 @@
       </footer>
     </div>
   </body>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap" />
   <link
     rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=DynaPuff"
+    href="https://fonts.googleapis.com/css?family=DynaPuff&display=swap"
   />
 </html>

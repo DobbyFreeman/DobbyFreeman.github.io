@@ -17,7 +17,7 @@
     overflow-wrap: auto;
     border: 1px solid ghostwhite;
     border-radius: 20px;
-    box-shadow: 2px 2px 10px 5px ghostwhite;
+    box-shadow: 1px 1px 15px 15px ghostwhite;
   }
   #wrap{
     transition: box-shadow 1s, background-color 1s, border 1s, width 1s;
@@ -25,6 +25,7 @@
 #darkLightD{
     width: 5%;
     float: right;
+    margin: auto;
 }
 body {
     background: burlywood;
@@ -66,18 +67,17 @@ h3 a{
 }
 
 #countryID{
+  width: 4.5%;
     border: 2px solid lightcoral;
     border-radius: 20px;
-    background-color: ghostwhite;
     appearance: button;
-    margin-left: 8%;
-    padding: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1%;
+    background-color: ghostwhite;
     color: lightcoral;
+    height: 20px;
     font-weight: 800;
-    -webkit-appearance: none;
-    
+    float: right;
+    margin-left: 2%;
 }
 
 .buttonsC{
@@ -106,8 +106,8 @@ h3 a{
 #searchBtn{
   
     white-space: nowrap;
-    padding-top: 0.6%;
-    padding-bottom: 0.6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 #imgBtn{
     margin-top: 2%;
@@ -296,12 +296,65 @@ footer img:hover{
   section{
     word-wrap: break-word;
   }
+
+#popDiv {
+  position:absolute;
+  height: 50%;
+  width: 50%;
+  top: 10%;
+  left: 25%;
+  padding: 2%;
+  z-index: 1;
+  box-shadow: 1px 1px 15px 15px rgb(255, 0, 0, 0.5);
+  background-color: ghostwhite;
+  opacity: 0.9;
+  border-radius: 20px;
+  display: none;
+}
+#unpopBtn{
+  float: right;
+  margin: 2.5%;
+  background-image: url("./images/exit.png");
+  background-size: contain;
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
+  background-color: ghostwhite;
+  border: ghostwhite;
+  transition: 2s;
+}
+#unpopBtn:hover{
+  box-shadow: 1px 1px 15px 15px rgb(255, 215, 0, 0.5);
+  background-color:rgb(255, 215, 0, 0.5);
+}
+#popupBtn{
+  background-image: url("./images/info.png");
+  background-size:contain;
+  background-color: ghostwhite;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  float: right;
+  margin: auto;
+  margin-right: 2%;
+  border-radius: 20px;
+  border: none;
+  transition: 0.5s;
+}
+#popupBtn:hover{
+  border: 1px solid ghostwhite;
+  box-shadow: 1px 1px 15px 15px ghostwhite;
+}
+#popHead{
+  color: lightcoral;
+  clear: both;
+  
+}
+#popHead:hover{
+  box-shadow: none;
+  background-color: transparent;
+}
   @media screen and (max-width: 1250px){
-    #countryID{
-      width: 35%;
-      font-size: 10px;
-      -webkit-appearance: none;
-    }
     #searchBtn{
       height: 34px;
       width: 15%;
@@ -309,19 +362,27 @@ footer img:hover{
     .buttonsC{
       margin-left: 2%;
     }
+    #countryID{
+      width: 5%;
+      margin-left: 4%;
+    }
+    #darkLightD{
+      margin-left: 1%;
+    }
   }
   @media screen and (max-width: 1000px){
-    #countryID{
-      width: 40%;
-      font-size: 10px;
-      -webkit-appearance: none;
-    }
     #searchBtn{
       width: 20%;
-      height: 30px;
     }
     .buttonsC{
       margin-left: 2%;
+    }
+    #countryID{
+      width: 5%;
+      margin-left: 5%;
+    }
+    #darkLightD{
+      margin-left: 1%;
     }
   }
 
@@ -331,64 +392,59 @@ footer img:hover{
         width: 90%;
         transition: 1s;
     }
-
-    #countryID{
-      display: none;
-    }
-
     .buttonsC{
       width: 15%;
     }
-
     #searchBtn{
       padding: 1%;
       height: auto;
     }
-
     #userSearch{
       width: 60%;
       font-size: 10px;
     }
-
     .switch{
       float: right;
+    }
+    #countryID{
+      width: 6%;
+      margin-left: 3%;
+    }
+    #darkLightD{
+      margin-left: 6%;
     }
 }
 
 @media screen and (max-width:600px){
-
-
   #wrap{
     width: 100%;
     margin-top: 20%;
-    transition: all 1s;
-    
+    transition: all 1s; 
 }
 body{
   background-color: rgb(199, 233, 255);
 }
-
-#countryID{
-  display: none;
-}
-
 .buttonsC{
   width: 18%;
   margin-left: 2%;
 }
-
 #searchBtn{
   padding: 1%;
 }
-
 #userSearch{
   width: 70%;
   font-size: 10px;
   margin-bottom: 1%;
 }
-
 .switch{
   float: right;
+}
+#countryID{
+  width: 7%;
+  margin-left: 3%;
+}
+#darkLightD{
+  margin-left: 6%;
 }
 }
 
@@ -398,16 +454,23 @@ body{
   width: 20%;
   margin-left: 3%;
 }
-
 #searchBtn{
   padding: 1%;
 }
-
 #userSearch{
   width: 70%;
   height: 20px;
   font-size: 8px;
   margin-bottom: 3%;
+}
+#countryID{
+  float: right;
+  width: 10%;
+  margin-left: 5%;
+}
+#darkLightD{
+  float: right;
+  margin-left: 13%;
 }
 }
 
@@ -439,5 +502,12 @@ body{
 
     display: inline-block;
     font-size: 6px;
+  }
+  #countryID{
+    width: 12%;
+    margin-left: 6%;
+  }
+  #darkLightD{
+    margin-left: 18%;
   }
 }
