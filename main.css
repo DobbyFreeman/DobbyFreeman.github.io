@@ -59,7 +59,7 @@ h3 a{
     user-select: text;
     border-radius: 10px;
     border: 1px solid white;
-    box-shadow: 1px 1px 3px 3px ghostwhite;
+    box-shadow: 1px 1px 10px 5px ghostwhite;
     width: 55%;
     padding: 1%;
     color: black;
@@ -67,10 +67,12 @@ h3 a{
 }
 
 #countryID{
+  box-shadow: 1px 1px 30px 15px ghostwhite;
   width: 4.5%;
     border: 2px solid lightcoral;
     border-radius: 20px;
     appearance: button;
+    -webkit-appearance: none;
     padding-left: 1%;
     background-color: ghostwhite;
     color: lightcoral;
@@ -335,6 +337,7 @@ footer img:hover{
   background-image: url("./images/info.png");
   background-size:contain;
   background-color: ghostwhite;
+  box-shadow: 1px 1px 30px 15px ghostwhite;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -394,9 +397,6 @@ footer img:hover{
       left: 13%;
     }
   }
-@media screen and (max-width:800px){
-
-}
   @media screen and (max-width:720px){
 
     #wrap{
