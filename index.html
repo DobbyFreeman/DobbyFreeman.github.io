@@ -34,6 +34,8 @@
         var sun = document.getElementById("sun");
         var moon = document.getElementById("moon");
         var title = document.getElementById("hTitle");
+        var infoBtn = document.getElementById("popupBtn");
+        var countryBtn = document.getElementById("countryID");
         const boxes = document.querySelectorAll(".descriptionDiv");
         const boxes2 = document.querySelectorAll(".switch");
         if (document.querySelector(".checker").checked == true) {
@@ -67,9 +69,11 @@
             );
           }
           boxes2.forEach((box1) => {
-            box1.style.boxShadow = "none";
+            box1.style.boxShadow = "1px 1px 15px 15px rgb(255, 215, 0, 0.5)";
           });
           title.style.textShadow = "3px 6px 16px ghostwhite";
+          infoBtn.style.boxShadow = "1px 1px 15px 15px rgb(255, 215, 0, 0.5)";
+          countryBtn.style.boxShadow = "1px 1px 15px 15px rgb(255, 215, 0, 0.5)";
         } else if (document.querySelector(".checker").checked == false) {
           wrap.style = "";
           body.style = "";
@@ -80,6 +84,8 @@
           iBtn.style = "";
           vBtn.style = "";
           nBtn.style = "";
+          infoBtn.style = "";
+          countryBtn.style = "";
           try {
             info.style = "";
           } catch {
