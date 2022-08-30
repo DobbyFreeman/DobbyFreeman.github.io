@@ -320,6 +320,28 @@ footer img:hover{
   line-height: 35px;
   transition: 1s;
 }
+#popDivInfo a{
+  width:fit-content;
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  user-select: text;
+  text-decoration: none;
+  color: lightcoral;
+  transition: 1s;
+  border: 2px solid lightcoral;
+  border-radius: 20px;
+  padding: 0%;
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-left:2%;
+  transition: 1s;
+}
+#popDivInfo a:hover{
+  color: ghostwhite;
+  overflow: auto;
+  background-color: rgb(240, 128, 128, 0.7);
+  box-shadow: 1px 1px 60px 10px rgb(240, 128, 128);
+}
 
 #unpopBtn{
   float: right;
@@ -485,7 +507,6 @@ body{
   background-size:contain;
 }
 }
-
 @media screen and (max-width:420px){
 
 .buttonsC{
