@@ -340,7 +340,6 @@ footer img:hover{
   background-image: url("./images/info.png");
   background-size: contain;
   background-position: center;
-  background-color: rgb(248, 248, 255, 0.7);
   box-shadow: 1px 1px 30px 15px ghostwhite;
   width: 20px;
   height: 20px;
@@ -349,12 +348,13 @@ footer img:hover{
   margin: auto;
   margin-right: 2%;
   border-radius: 20px;
-  border: none;
+  border: 2px solid lightcoral;
   transition: 1s;
 }
 #popupBtn:hover{
   box-shadow: 1px 1px 15px 15px ghostwhite;
   transition: 1s;
+  background-color: red;
 }
 #popHead{
   color: lightcoral;
