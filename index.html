@@ -36,12 +36,15 @@
         var title = document.getElementById("hTitle");
         var infoBtn = document.getElementById("popupBtn");
         var countryBtn = document.getElementById("countryID");
+        var popup = document.getElementById("popDiv");
+        var popupText = document.getElementById("popDivInfo");
+        var right = document.getElementById("copyright");
         const boxes = document.querySelectorAll(".descriptionDiv");
         const boxes2 = document.querySelectorAll(".switch");
         if (document.querySelector(".checker").checked == true) {
           wrap.style.backgroundColor = "black";
           body.style.backgroundColor = "black";
-          wrap.style.boxShadow = "1px 1px 15px 15px rgb(255, 215, 0, 0.5)";
+          wrap.style.boxShadow = "1px 1px 60px 15px rgb(240, 128, 128, 0.5)";
           wrap.style.border = "none";
           searchBar.style.backgroundColor = "black";
           searchBar.style.color = "white";
@@ -69,12 +72,18 @@
             );
           }
           boxes2.forEach((box1) => {
-            box1.style.boxShadow = "1px 1px 15px 15px rgb(255, 215, 0, 0.5)";
+            box1.style.boxShadow = "1px 1px 60px 15px rgb(240, 128, 128, 0.5)";
           });
-          title.style.textShadow = "3px 6px 16px ghostwhite";
-          infoBtn.style.boxShadow = "1px 1px 15px 15px rgb(255, 215, 0, 0.5)";
-          infoBtn.style.backgroundColor = "rgb(255, 215, 0, 0.5)"
-          countryBtn.style.boxShadow = "1px 1px 15px 15px rgb(255, 215, 0, 0.5)";
+          title.style.textShadow = "3px 6px 16px rgb(240, 128, 128, 0.5)";
+          infoBtn.style.boxShadow = "1px 1px 60px 15px rgb(240, 128, 128, 0.5)";
+          infoBtn.style.backgroundColor = "rgb(240, 128, 128, 0.15)";
+          countryBtn.style.boxShadow = "1px 1px 60px 15px rgb(240, 128, 128, 0.5)";
+          popup.style.backgroundColor = "black";
+          popup.style.opacity = "0.9";
+          popupText.style.color = "ghostwhite";
+          right.style.boxShadow = "none";
+          right.style.backgroundColor = "transparent";
+          right.style.color = "lightcoral";
         } else if (document.querySelector(".checker").checked == false) {
           wrap.style = "";
           body.style = "";
@@ -101,6 +110,12 @@
             box1.style.boxShadow = "";
           });
           title.style = "";
+          popup.style.backgroundColor = "";
+          popup.style.opacity = "";
+          popupText.style.color = "";
+          right.style.boxShadow = "";
+          right.style.backgroundColor = "";
+          right.style.color = "";
         }
       }
       function checkSearch() {
@@ -452,7 +467,7 @@
       <div id="content"></div>
       <footer>
         <div id="footDiv">
-          <h4>Copyright &copy; 2022, Iriss. All Rights Reserved</h4>
+          <h4 id="copyright">Copyright &copy; 2022, Iriss. All Rights Reserved</h4>
           <a href="#" title="Go to Top"
             ><img
               id="topImg"
