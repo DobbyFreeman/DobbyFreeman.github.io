@@ -348,13 +348,13 @@ footer img:hover{
   margin: auto;
   margin-right: 2%;
   border-radius: 20px;
+  background-color: ghostwhite;
   border: 2px solid lightcoral;
   transition: 1s;
 }
 #popupBtn:hover{
   box-shadow: 1px 1px 15px 15px ghostwhite;
   transition: 1s;
-  background-color: red;
 }
 #popHead{
   color: lightcoral;
