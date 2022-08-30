@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="Iriss serves as a simple and secure alternative to Google search as well as other search engines. Iris utulizes google search APIs (for now) to provide the top and best results to your search query all while providing you with a simple but elegant UI as well as ensuring that your data is safe."
+      content="Iriss serves as a simple alternative to Google search as well as other search engines. Iris utulizes google search APIs to provide you with the top and best results to your search querys all while providing you with a simple but elegant UI."
     />
     <meta name="keywords" content="iriss,search,google alternative,secure" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -402,12 +402,20 @@
       }
     </script>
   </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2MVN90X1NE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2MVN90X1NE');
+</script>
   <body id="bodyID">
     <div id="wrap">
       <div id="popDiv">
         <button id="unpopBtn" onclick="unPop();"></button>
         <h3 id="popHead">About Iriss</h3>
-        <p1 id="popDivInfo">Iriss is a web search website that was built by me for fun and educational purposes. Iriss uses google search APIs to bring you the top and best results to your search query. Iriss does not collect any information or data from you other than the search query and country you input to get your results. Please use at your own risk.</p1>
+        <p1 id="popDivInfo">Iriss is a web search website that was built by me for fun and educational purposes. Iriss uses google search APIs to bring you the top and best results to your search query. Please use at your own risk.</p1>
       </div>
       <div id="controls">
       <select title="Search Country ID" id="countryID">
