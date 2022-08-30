@@ -312,12 +312,13 @@ footer img:hover{
   overflow:auto;
   min-height: fit-content;
   display: none;
-  transition: 4s;
+  transition: 1s;
 }
 #popDivInfo{
   display: block;
   margin: 5%;
   line-height: 35px;
+  transition: 1s;
 }
 
 #unpopBtn{
@@ -330,7 +331,7 @@ footer img:hover{
   width: 20px;
   background-color: rgb(248, 248, 255, 0.1);
   border: ghostwhite;
-  transition: 2s;
+  transition: 1s;
 }
 #unpopBtn:hover{
   box-shadow: 1px 1px 15px 15px rgb(255, 215, 0, 0.5);
