@@ -321,24 +321,25 @@ footer img:hover{
   transition: 1s;
 }
 #popDivInfo a{
+  display: inline-block;
+  overflow: auto;
   width:fit-content;
   -webkit-touch-callout: text;
   -webkit-user-select: text;
   user-select: text;
   text-decoration: none;
   color: lightcoral;
-  transition: 1s;
   border: 2px solid lightcoral;
-  border-radius: 20px;
+  border-radius: 20px 60px;
   padding: 0%;
-  padding-right: 2%;
-  padding-left: 2%;
-  margin-left:2%;
+  padding-right: 6%;
+  padding-left: 6%;
   transition: 1s;
 }
 #popDivInfo a:hover{
   color: ghostwhite;
   overflow: auto;
+  transform: rotate(8deg);
   background-color: rgb(240, 128, 128, 0.7);
   box-shadow: 1px 1px 60px 10px rgb(240, 128, 128);
 }
@@ -356,8 +357,8 @@ footer img:hover{
   transition: 1s;
 }
 #unpopBtn:hover{
-  box-shadow: 1px 1px 15px 15px rgb(255, 215, 0, 0.5);
-  background-color:rgb(255, 215, 0, 0.5);
+  box-shadow: 1px 1px 60px 10px rgb(240, 128, 128);
+  background-color: rgb(240, 128, 128, 0.2);
 }
 #popupBtn{
   background-image: url("./images/info.png");
