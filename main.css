@@ -87,7 +87,7 @@ h3 a{
     border: 1px solid ghostwhite;
     border-radius: 20px;
     background-color: aliceblue;
-    margin-left: 3%;
+    margin-left: 2%;
     box-shadow: 1px 1px 3px 3px ghostwhite;
     color:lightcoral;
     font-weight: 800;
@@ -95,7 +95,6 @@ h3 a{
     padding-left: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
-
     width: 15%;
 }
 .buttonsC{
@@ -106,14 +105,8 @@ h3 a{
     color: white;
     transform: rotate(10deg);
 }
-#searchBtn{
-  
-    white-space: nowrap;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
 #imgBtn{
-    margin-top: 2%;
+    margin-top: 1.75%;
 }
 h3{
     transition: 0.5s;
@@ -182,8 +175,8 @@ footer h4{
     transition: 0.5s;
 }
 footer img{
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border-radius: 20px;
     display: none;
     margin: auto;
@@ -390,10 +383,6 @@ footer img:hover{
   background-color: transparent;
 }
   @media screen and (max-width: 1250px){
-    #searchBtn{
-      height: 34px;
-      width: 15%;
-    }
     .buttonsC{
       margin-left: 2%;
     }
@@ -406,9 +395,6 @@ footer img:hover{
     }
   }
   @media screen and (max-width: 1000px){
-    #searchBtn{
-      width: 20%;
-    }
     .buttonsC{
       margin-left: 2%;
     }
